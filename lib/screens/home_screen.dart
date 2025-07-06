@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         // backgroundColor: Colors.teal[400],
         backgroundColor: Theme.of(context).primaryColor,
-        title: const Text("Counter App Redesign"),
+        title: const Text("Counter App Re-design"),
         titleTextStyle: const TextStyle(color: Colors.white, fontSize: 18),
         centerTitle: true,
       ),

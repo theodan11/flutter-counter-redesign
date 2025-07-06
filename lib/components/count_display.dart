@@ -11,7 +11,7 @@ class CountDisplay extends StatelessWidget {
       height: 80,
       alignment: const Alignment(0, 0),
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.teal),
+          border: Border.all(color: Theme.of(context).colorScheme.primary),
           borderRadius: const BorderRadius.all(Radius.circular(30))),
       child: Text(
         "Count: $count",

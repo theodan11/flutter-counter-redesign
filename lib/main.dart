@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Connter App Redesign',
+      title: 'Connter App Re-design',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
+        colorScheme: const ColorScheme.light(primary: Color(0xFF4DB6AC)),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }

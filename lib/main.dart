@@ -1,8 +1,13 @@
+import 'package:counter_app_redesign/cubit/counter_cubit.dart';
 import 'package:counter_app_redesign/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(BlocProvider(
+    create: (context) => CounterCubit(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Connter App Re-design',
+      title: 'Connter App Re-design ',
       theme: ThemeData(
         colorScheme: const ColorScheme.light(primary: Color(0xFF4DB6AC)),
         useMaterial3: true,

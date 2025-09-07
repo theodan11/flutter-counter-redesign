@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         // backgroundColor: Colors.teal[400],
         backgroundColor: Theme.of(context).primaryColor,
-        title: const Text("Counter App Re-design"),
+        title: const Text("Counter App Using Bloc ( Cubit )"),
         titleTextStyle: const TextStyle(color: Colors.white, fontSize: 18),
         centerTitle: true,
       ),
@@ -28,6 +28,20 @@ class HomeScreen extends StatelessWidget {
               children: [
                 const SizedBox(
                   width: double.infinity,
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Counter",
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.primary,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
                 ),
                 CountDisplay(
                   count: state.count,
